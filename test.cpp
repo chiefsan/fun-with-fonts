@@ -20,6 +20,7 @@ static void load () {
           for (int y=j+1-1; y<=j+30+1; ++y) {
             n = arr[x*512+y];
             n=n!=0?1:0;
+            arr[x*512+y] = n;
             cout << n << ' ';
           }
           cout << '\n';
